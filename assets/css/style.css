@@ -311,6 +311,9 @@ body {
   font-size: 3.2rem;
   text-transform: uppercase;
 }
+.header-logo{
+  height: 180px;
+}
 
 .nav-open-btn {
   color: var(--white);
