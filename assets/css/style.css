@@ -1186,6 +1186,7 @@ body {
     font-size: 2.6rem;
   }
 
+
   .search-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 
@@ -1195,7 +1196,7 @@ body {
    */
 
   .hero {
-    background-image: url("../images/hero.jpg");
+    background-image: url("../images/young-girls.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
