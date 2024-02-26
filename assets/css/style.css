@@ -641,7 +641,6 @@ body {
 /*-----------------------------------*\
   #DONATE
 \*-----------------------------------*/
-
 .donate-list {
   display: grid;
   gap: 60px;
@@ -684,12 +683,12 @@ body {
 .progress {
   height: 6px;
   width: 83%;
-  background-color: var(--pistachio);
+  background-color: var(--pink); /* Changed green to pink */
   border-radius: inherit;
 }
 
 .progress-value {
-  color: var(--pistachio);
+  color: var(--pink); /* Changed green to pink */
   font-size: var(--fs-7);
   font-weight: var(--fw-600);
 }
@@ -715,7 +714,7 @@ body {
 
 .card-wrapper-text data { font-weight: var(--fw-600); }
 
-.card-wrapper-text .green { color: var(--pistachio); }
+.card-wrapper-text .pink { color: var(--pink); } /* Changed green to pink */
 
 .card-wrapper-text .yellow { color: var(--bright-yellow-crayola); }
 
