@@ -222,7 +222,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  border: 1px solid var(--btn-bg, var(--pistachio));
+  border: 1px solid var(--btn-bg, );
   transform: translate(5px, 5px);
   transition: var(--transition-2);
 }
@@ -231,7 +231,10 @@ body {
 
 .btn-secondary { --btn-bg: var(--black); }
 
-.btn-secondary:is(:hover, :focus) { --btn-bg: var(--pistachio); }
+.btn-secondary:is(:hover, :focus) {
+  --btn-bg: rgb(232, 70, 97); /* Updated colour to rgb(232, 70, 97) */
+}
+
 
 .btn-outline {
   border: 2px solid var(--white);
@@ -261,7 +264,9 @@ body {
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
-
+#Dignity{
+  color: rgb(232, 70, 97);
+}
 .lang-switch,
 .header-action { display: none; }
 
