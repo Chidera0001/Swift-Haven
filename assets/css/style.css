@@ -306,7 +306,7 @@ body {
 }
 
 .logo {
-  color: var(--white);
+  color:rgb(232, 70, 97);
   font-family: var(--ff-oswald);
   font-size: 3.2rem;
   text-transform: uppercase;
