@@ -8,8 +8,6 @@
 
 
 
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -158,7 +156,9 @@ body {
 
 ::-webkit-scrollbar-track { background-color: hsl(0, 0%, 95%); }
 
-::-webkit-scrollbar-thumb { background-color: var(--pistachio); }
+::-webkit-scrollbar-thumb {
+  background-color: rgb(232, 70, 97); /* Updated colour to rgb(232, 70, 97) */
+}
 
 
 
@@ -379,6 +379,10 @@ body {
 }
 
 .navbar-link:is(:hover, :focus) { background-color: var(--pistachio); }
+
+.btn-primary {
+  background-color: rgb(232, 70, 97);
+}
 
 
 
