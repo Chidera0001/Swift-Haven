@@ -476,7 +476,6 @@ body {
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
-
 .about { padding-block-start: 120px; }
 
 #deco{
@@ -1104,6 +1103,7 @@ body {
   .banner-row {
     display: flex;
     gap: 20px;
+    height: 100px;
   }
 
   .deco-title {
@@ -1234,7 +1234,7 @@ body {
    * ABOUT
    */
 
-  .banner-col { width: 50%; }
+  .banner-col { width: 110%; height: 85%; }
 
   .about-img { max-width: 100%; }
 
