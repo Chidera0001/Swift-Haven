@@ -479,6 +479,9 @@ body {
 
 .about { padding-block-start: 120px; }
 
+#deco{
+  color: rgb(232, 70, 97);
+}
 .about-banner {
   position: relative;
   max-width: max-content;
