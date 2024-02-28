@@ -528,14 +528,14 @@ body {
 
 .tab-btn {
   background-color: var(--platinum);
-  color: var(--granite-gray);
+  color: rgb(232, 70, 97);
   font-size: var(--fs-8);
   font-weight: var(--fw-500);
   padding: 10px 32px;
 }
 
 .tab-btn.active {
-  background-color: var(--pistachio);
+  background-color: rgb(232, 70, 97);
   color: var(--white);
 }
 
@@ -550,7 +550,7 @@ body {
 
 .tab-item .item-icon {
   font-size: 3rem;
-  color: var(--pistachio);
+  color: rgb(232, 70, 97);
 }
 
 .tab-text {
