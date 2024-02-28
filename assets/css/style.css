@@ -515,6 +515,10 @@ body {
 
 .about .section-subtitle { margin-block-end: 10px; }
 
+#why-us{
+  color: rgb(232, 70, 97);
+}
+
 .tab-nav {
   display: flex;
   flex-wrap: wrap;
