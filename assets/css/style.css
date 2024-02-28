@@ -591,9 +591,14 @@ body {
   color: white;
 }
 .solution{
-  background-color: black;
+  background-image: url('/assets/images/solution2.jpg');
   background-position: center;
   height: 60vh;
+}
+.solution h2 ion-icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: rgb(232, 70, 97);
 }
 
 /*-----------------------------------*\
