@@ -171,7 +171,7 @@ body {
 .container { padding-inline: 15px; }
 
 .section-subtitle {
-  color: var(--color, var(--pistachio));
+  color: rgb(232, 70, 97);
   font-size: var(--fs, var(--fs-8));
   font-family: var(--ff, var(--ff-roboto));
   font-weight: var(--fw-600);
@@ -580,6 +580,7 @@ body {
   font-weight: var(--fw-600);
   line-height: 1.2;
   margin-block-end: 25px;
+  text-align: center;
 }
 
 .cta .btn-outline { margin-inline: auto; }
@@ -589,10 +590,11 @@ body {
 .cta-text{
   color: white;
 }
-
-
-
-
+.solution{
+  background-color: black;
+  background-position: center;
+  height: 60vh;
+}
 
 /*-----------------------------------*\
   #SERVICE
@@ -623,10 +625,10 @@ body {
   transition: var(--transition-2);
 }
 
-.service-card:is(:hover, :focus-within) { outline-color: var(--pistachio); }
+.service-card:is(:hover, :focus-within) { outline-color: rgb(232, 70, 97); }
 
 .service-card .card-icon {
-  color: var(--pistachio);
+  color: rgb(232, 70, 97);
   font-size: 7rem;
   max-width: max-content;
   margin-inline: auto;
