@@ -495,17 +495,15 @@ body {
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--light-gray);
-  transform-origin: top left;
-  transform: rotate(0.25turn);
-  position: absolute;
+  transform-origin: left;
   top: 55%;
-  left: 100%;
+  left: 10%;
   z-index: -1;
 }
 
 .deco-img {
   position: absolute;
-  top: -40px;
+  top: 270px;
   left: 0;
   z-index: -1;
 }
@@ -1099,7 +1097,7 @@ body {
   /**
    * ABOUT
    */
-   
+
 
   .banner-row {
     display: flex;
