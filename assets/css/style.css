@@ -1233,8 +1233,14 @@ body {
    * ABOUT
    */
 
-  .banner-col { width: 110%; height: 85%; }
-
+  .banner-col { 
+    width: 110%; 
+    height: 85%; 
+  }
+  .move-up {
+    margin-top: -120px; /* Adjust the value as needed */
+  }
+  
   .about-img { max-width: 100%; }
 
   .about-img-2 {
@@ -1442,7 +1448,13 @@ body {
    * ABOUT
    */
 
-  .deco-img { left: -35px; }
+  .deco-img { 
+    left: -35px;
+    right: 20px;
+    height: 450px;
+    top: 160px;
+    width: 90px;
+   }
 
 
 
