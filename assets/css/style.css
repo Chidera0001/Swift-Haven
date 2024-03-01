@@ -675,89 +675,97 @@ body {
 /*-----------------------------------*\
   #DONATE
 \*-----------------------------------*/
-
-.donate-list {
-  display: grid;
-  gap: 60px;
+.Donate{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-transform: capitalize;
+  transition: all .2s linear;
 }
 
-.donate-card { box-shadow: var(--card-shadow); }
-
-.donate-card .card-banner { background-color: var(--light-gray); }
-
-.donate-card .card-content {
-  background-color: var(--white);
-  padding: 35px;
-}
-
-.progress-wrapper {
+.Donate{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  padding:25px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #2ecc71 60%, #27ae60 40.1%);
 }
 
-.progress-text {
-  display: flex;
-  gap: 5px;
-  font-size: var(--fs-8);
+.Donate form{
+  padding:20px;
+  width:700px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
 }
 
-.progress-text data {
-  color: var(--eerie-black-2);
-  font-weight: var(--fw-600);
-}
-
-.donate-card .card-title { --fs-5: 2.1rem; }
-
-.progress-box {
-  background-color: var(--cultured);
-  border-radius: 20px;
-  margin-block: 10px 20px;
-}
-
-.progress {
-  height: 6px;
-  width: 83%;
-  background-color: var(--pistachio);
-  border-radius: inherit;
-}
-
-.progress-value {
-  color: var(--pistachio);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-600);
-}
-
-.card-wrapper {
+.Donate form .row{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5px;
-  margin-block: 15px;
+  gap:15px;
 }
 
-.donate-card .card-wrapper-text {
+.Donate form .row .col{
+  flex:1 1 250px;
+}
+
+.Donate form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.Donate form .row .col .inputBox{
+  margin:15px 0;
+}
+
+.Donate form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+}
+
+.Donate form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.Donate form .row .col .inputBox input:focus{
+  border:1px solid #000;
+}
+
+.Donate form .row .col .flex{
   display: flex;
-  gap: 5px;
+  gap:15px;
 }
 
-.donate-card .card-wrapper-text span {
-  color: var(--sonic-silver);
-  font-weight: var(--fw-500);
+.Donate form .row .col .flex .inputBox{
+  margin-top: 5px;
 }
 
-.card-wrapper-text data { font-weight: var(--fw-600); }
+.Donate form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
 
-.card-wrapper-text .green { color: var(--pistachio); }
+.Donate form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #27ae60;
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
+}
 
-.card-wrapper-text .yellow { color: var(--bright-yellow-crayola); }
-
-.card-wrapper-text .cyan { color: var(--medium-turquoise); }
-
-
-
-
+.Donate form .submit-btn:hover{
+  background: #2ecc71;
+}
 
 /*-----------------------------------*\
   #TESTIMONIALS
@@ -973,6 +981,7 @@ body {
 .copyright-link {
   text-decoration: underline;
   transition: var(--transition-1);
+  padding-right: 30px;
 }
 
 .footer-link {  color: var(--white_50); }
