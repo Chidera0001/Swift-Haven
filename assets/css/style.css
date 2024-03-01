@@ -177,9 +177,14 @@ body {
   font-weight: var(--fw-600);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 3px;
 }
-
+.section-subtitle ion-icon {
+  font-size: 40px; /* Adjust the font size of the ion-icon */
+}
+.section-subtitle span {
+  font-size: 24px; /* Adjust the font size of the "Eureka" text */
+}
 .h1,
 .h2 { font-weight: var(--fw-300); }
 
@@ -591,7 +596,7 @@ body {
   color: white;
 }
 .solution{
-  background-image: url('/assets/images/solution2.jpg');
+  background-color: white;
   background-position: center;
   height: 60vh;
 }
@@ -600,7 +605,9 @@ body {
   vertical-align: middle;
   color: rgb(232, 70, 97);
 }
-
+.solution-text{
+  color: white;
+}
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -754,9 +761,10 @@ body {
 
 /*-----------------------------------*\
   #TESTIMONIALS
+
 \*-----------------------------------*/
 
-.testi { background-color: var(--jet); }
+.testi { background-color: var(--jet);}
 
 .testi-content { padding: var(--section-padding) 15px; }
 
@@ -784,11 +792,7 @@ body {
   font-size: var(--fs-10);
 }
 
-.testi-banner { background-color: var(--light-gray); }
-
-
-
-
+.testi-banner { background-color: var(--light-gray);}
 
 /*-----------------------------------*\
   #PARTNER
