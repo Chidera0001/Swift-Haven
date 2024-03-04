@@ -184,7 +184,7 @@
                     width="4700"
                     height="4700"
                     loading="lazy"
-                    alt="Tiger"
+                    alt="SH"
                     class="about-img w-100 move-up"
                   />
                 </div>
@@ -446,203 +446,196 @@
             </a>
           </div>
         </section>
+        <section class="contact" id="contact">
+          <strong class="contact-header"> CONTACT US</strong>
+    
+          <form action="" method="POST">
+            <div class="input-box">
+              <input type="text" name="Full_Name" placeholder="Full Name" />
+              <input
+                type="email"
+                name="Email_Address"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="input-box">
+              <input
+                type="number"
+                name="Mobile_Number"
+                placeholder="Mobile Number"
+              />
+              <input type="text" name="Email_Subject" placeholder="Email Subject" />
+            </div>
+            <textarea
+              name="Your_Message"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+            <input type="submit" value="Send Message" class="submit-btn" />
+          </form>
+        </section>
 
         <!-- 
         - #DONATE -->
-        <div class="Donate" id="Donate">
-          <form action="">
-            <div class="row">
-              <div class="col">
-
-                <h3 class="title">billing address</h3>
-
-                <div class="inputBox">
-                    <span>full name :</span>
-                    <input type="text" placeholder="john deo">
-                </div>
-                <div class="inputBox">
-                    <span>email :</span>
-                    <input type="email" placeholder="example@example.com">
-                </div>
-                <div class="inputBox">
-                    <span>address :</span>
-                    <input type="text" placeholder="room - street - locality">
-                </div>
-                <div class="inputBox">
-                    <span>city :</span>
-                    <input type="text" placeholder="mumbai">
-                </div>
-
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>state :</span>
-                        <input type="text" placeholder="india">
-                    </div>
-                    <div class="inputBox">
-                        <span>zip code :</span>
-                        <input type="text" placeholder="123 456">
-                    </div>
-                </div>
+        <h1 class="Donate-title">JOIN US & MAKE A DIFFERENCE</h1>
+        <div class="donation-form-container">
+          <div class="Donate" id="Donate">
+            <form action="your_donation_processing_url" method="POST">
+              <div class="row">
+                  <div class="col">
+                      <h3 class="title">donor information</h3>
+                      <div class="inputBox">
+                          <span>full name :</span>
+                          <input type="text" name="full_name" required>
+                      </div>
+                      <div class="inputBox">
+                          <span>email :</span>
+                          <input type="email" name="email" required>
+                      </div>
+                      <div class="inputBox">
+                          <span>address :</span>
+                          <input type="text" name="address" required>
+                      </div>
+                      <div class="inputBox">
+                          <span>city :</span>
+                          <input type="text" name="city" required>
+                      </div>
+                      <div class="flex">
+                          <div class="inputBox">
+                              <span>state :</span>
+                              <input type="text" name="state" required>
+                          </div>
+                          <div class="inputBox">
+                              <span>zip code :</span>
+                              <input type="text" name="zip_code" required>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                      <h3 class="title">donation information</h3>
+                      <div class="inputBox">
+                          <span>donation amount :</span>
+                          <input type="number" name="donation_amount" min="1" required>
+                      </div>
+                      <div class="inputBox">
+                          <span>payment method :</span>
+                          <select name="payment_method" required>
+                              <option value="credit_card">Credit Card</option>
+                              <option value="paypal">PayPal</option>
+                              <option value="other">Other</option>
+                          </select>
+                          <img src="/assets/images/card_img.png" alt="">
+                      </div>
+                      <div class="inputBox">
+                          <span>card details (for credit card only) :</span>
+                          <input type="text" name="card_number" placeholder="1111-2222-3333-4444" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" title="Please enter a valid credit card number in the format XXXX-XXXX-XXXX-XXXX" maxlength="19">
+                      </div>
+                      <div class="flex">
+                          <div class="inputBox">
+                              <span>expiration date (for credit card only) :</span>
+                              <input type="month" name="expiration_date" required>
+                          </div>
+                          <div class="inputBox">
+                              <span>CVV (for credit card only) :</span>
+                              <input type="text" name="cvv" placeholder="1234" maxlength="4">
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div class="col">
-
-                <h3 class="title">payment</h3>
-
-                <div class="inputBox">
-                    <span>cards accepted :</span>
-                    <img src="/assets/images/card_img.png" alt="">
-                </div>
-                <div class="inputBox">
-                    <span>name on card :</span>
-                    <input type="text" placeholder="mr. john deo">
-                </div>
-                <div class="inputBox">
-                    <span>credit card number :</span>
-                    <input type="number" placeholder="1111-2222-3333-4444">
-                </div>
-                <div class="inputBox">
-                    <span>exp month :</span>
-                    <input type="text" placeholder="january">
-                </div>
-
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>exp year :</span>
-                        <input type="number" placeholder="2022">
-                    </div>
-                    <div class="inputBox">
-                        <span>CVV :</span>
-                        <input type="text" placeholder="1234">
-                    </div>
-                </div>
-              </div>
-            </div>
-            <input type="submit" value="proceed to checkout" class="submit-btn">
+              <input type="submit" value="Donate" class="submit-btn">
           </form>
         </div>
-        <!-- 
-        - #CONTACT
-      -->
-      <section class="contact" id="contact">
-        <strong class="contact-header">CONTACT US</strong>
-  
-        <form action="" method="POST">
-          <div class="input-box">
-            <input type="text" name="Full_Name" placeholder="Full Name" />
-            <input
-              type="email"
-              name="Email_Address"
-              placeholder="Email Address"
-            />
-          </div>
-          <div class="input-box">
-            <input
-              type="number"
-              name="Mobile_Number"
-              placeholder="Mobile Number"
-            />
-            <input type="text" name="Email_Subject" placeholder="Email Subject" />
-          </div>
-          <textarea
-            name="Your_Message"
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Your Message"
-          ></textarea>
-          <input type="submit" value="Send Message" class="submit-btn" />
-        </form>
-      </section>
-        <!-- 
-        - #INSTA POST
-      -->
-
-        <section class="insta-post">
-          <ul class="insta-post-list">
-            <li class="insta-post-item">
-              <a href="#" class="insta-post-link">
-                <img
-                  src="./assets/images/happy-girl2.jpg"
-                  width="320"
-                  height="300"
-                  loading="lazy"
-                  alt="Lion"
-                  class="img-cover"
-                />
-
-                <ion-icon name="heart-outline"></ion-icon>
-              </a>
-            </li>
-
-            <li class="insta-post-item">
-              <a href="#" class="insta-post-link">
-                <img
-                  src="./assets/images/happy-girl4.jpg"
-                  width="320"
-                  height="300"
-                  loading="lazy"
-                  alt="Deer"
-                  class="img-cover"
-                />
-
-                <ion-icon name="heart-outline"></ion-icon>
-              </a>
-            </li>
-
-            <li class="insta-post-item">
-              <a href="#" class="insta-post-link">
-                <img
-                  src="./assets/images/happy-girl1.jpg"
-                  width="320"
-                  height="300"
-                  loading="lazy"
-                  alt="Wild Bear"
-                  class="img-cover"
-                />
-
-                <ion-icon name="heart-outline"></ion-icon>
-              </a>
-            </li>
-
-            <li class="insta-post-item">
-              <a href="#" class="insta-post-link">
-                <img
-                  src="./assets/images/happy-girl5.jpg"
-                  width="320"
-                  height="300"
-                  loading="lazy"
-                  alt="Deer"
-                  class="img-cover"
-                />
-
-                <ion-icon name="heart-outline"></ion-icon>
-              </a>
-            </li>
-
-            <li class="insta-post-item">
-              <a href="#" class="insta-post-link">
-                <img
-                  src="./assets/images/happy-girl3.webp"
-                  width="320"
-                  height="300"
-                  loading="lazy"
-                  alt="Horses"
-                  class="img-cover"
-                />
-
-                <ion-icon name="heart-outline"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </section>
+      </section> 
       </article>
     </main>
 
     <!-- 
     - #FOOTER
   -->
-
     <footer class="footer">
+        <!-- 
+        - #INSTA POST
+      -->
+      <section class="insta-post">
+        <ul class="insta-post-list">
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img
+                src="./assets/images/happy-girl2.jpg"
+                width="320"
+                height="300"
+                loading="lazy"
+                alt="Lion"
+                class="img-cover"
+              />
+
+              <ion-icon name="heart-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img
+                src="./assets/images/happy-girl4.jpg"
+                width="320"
+                height="300"
+                loading="lazy"
+                alt="Deer"
+                class="img-cover"
+              />
+
+              <ion-icon name="heart-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img
+                src="./assets/images/happy-girl1.jpg"
+                width="320"
+                height="300"
+                loading="lazy"
+                alt="Wild Bear"
+                class="img-cover"
+              />
+
+              <ion-icon name="heart-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img
+                src="./assets/images/happy-girl5.jpg"
+                width="320"
+                height="300"
+                loading="lazy"
+                alt="Deer"
+                class="img-cover"
+              />
+
+              <ion-icon name="heart-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="insta-post-item">
+            <a href="#" class="insta-post-link">
+              <img
+                src="./assets/images/happy-girl3.webp"
+                width="320"
+                height="300"
+                loading="lazy"
+                alt="Horses"
+                class="img-cover"
+              />
+
+              <ion-icon name="heart-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </section>
       <div class="container">
         <ul class="footer-list">
           <li>

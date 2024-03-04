@@ -406,6 +406,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
+  background-image: url(/assets/images/young-girls.jpeg);
   background-color: var(--eerie-black-1);
   color: var(--white);
   min-height: 700px;
@@ -675,6 +676,18 @@ body {
 /*-----------------------------------*\
   #DONATE
 \*-----------------------------------*/
+.donation-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.Donate-title{
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(232, 70, 97);
+}
+
 .Donate{
   font-family: 'Poppins', sans-serif;
   margin:0; padding:0;
@@ -687,6 +700,8 @@ body {
 
 .Donate{
   display: flex;
+  width: 100%;
+  align-self: center;
   justify-content: center;
   align-items: center;
   padding:25px;
@@ -695,10 +710,13 @@ body {
 }
 
 .Donate form{
+  display: flex;
+  flex-wrap: wrap;
   padding:20px;
   width:700px;
   background: #fff;
   box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  align-content: center;
 }
 
 .Donate form .row{
@@ -994,11 +1012,6 @@ body {
 .copyright { text-align: center; }
 
 .copyright-link { display: inline-block; }
-
-
-
-
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1007,11 +1020,8 @@ body {
  * responsive for larger than 450px screen
  */
 
-@media (min-width: 450px) {
-  body{
-    display: flex;
-    flex-wrap: wrap;
-  }
+ @media (min-width: 450px) {
+
   /**
    * CUSTOM PROPERTY
    */
@@ -1025,13 +1035,8 @@ body {
     --fs-3: 4rem;
 
   }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  body {
-    font-size: 14px;
-  }
+
+
 
   /**
    * CTA
@@ -1050,7 +1055,6 @@ body {
  */
 
 @media (min-width: 580px) {
-
 
   /**
    * CUSTOM PROPERTY
@@ -1141,11 +1145,9 @@ body {
    * ABOUT
    */
 
-
   .banner-row {
     display: flex;
     gap: 20px;
-    height: 100px;
   }
 
   .deco-title {
@@ -1243,7 +1245,6 @@ body {
     font-size: 2.6rem;
   }
 
-
   .search-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 
@@ -1257,8 +1258,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-    max-width: 100%;
-    height: auto;
+    min-height: 780px;
   }
 
 
@@ -1277,14 +1277,8 @@ body {
    * ABOUT
    */
 
-  .banner-col { 
-    width: 110%; 
-    height: 85%; 
-  }
-  .move-up {
-    margin-top: -120px; /* Adjust the value as needed */
-  }
-  
+  .banner-col { width: 50%; }
+
   .about-img { max-width: 100%; }
 
   .about-img-2 {
@@ -1492,13 +1486,7 @@ body {
    * ABOUT
    */
 
-  .deco-img { 
-    left: -35px;
-    right: 20px;
-    height: 450px;
-    top: 160px;
-    width: 90px;
-   }
+  .deco-img { left: -35px; }
 
 
 
@@ -1531,9 +1519,7 @@ body {
   /**
    * FOOTER
    */
-   footer{
-    width: 100%;
-   }
+
   .footer .container {
     margin-inline: 30px;
     width: auto;
